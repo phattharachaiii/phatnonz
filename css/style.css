@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Rammetto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+
+
 html{
   scroll-behavior: smooth;
 }
@@ -6,7 +10,7 @@ html{
 }
 #menu
 {
-  background-color: #ffffff79;
+  background-color: #b1afaf70;
 }
 
 .starter-template {
@@ -28,9 +32,9 @@ ul.navbar-nav li
 }
 .navbar-nav li a
 {
-  color:black!important;
+  color:rgb(59, 49, 49)!important;
   font-size:1.2em;
-  font-family: Century gothic,sans-serif;
+  font-family: 'Rammetto One', cursive;
   font-weight:600;
   transition: 0.4s ease;
 }
@@ -39,18 +43,22 @@ ul.navbar-nav li
   color:#fff!important;
   background-color:black!important;
 }
-.navbar-brand {
+.navbar-brand 
+{
+  position: relative;
   padding:10px 15px!important;
 }
-a.navbar-brand .fa-globe
+a.navbar-brand .name
 {
+  display: flex;
+  font-family: 'Holtwood One SC', serif;
   font-size: 30px;
-  color: black;
+  color: rgb(59, 49, 49);
   transition:0.5s ease;
 }
-a.navbar-brand .fa-globe:hover
+a.navbar-brand .name:hover
 {
-  color: #3935e6;
+  color: #f8f6f6;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
     background-color: black!important;
@@ -64,7 +72,7 @@ a.navbar-brand .fa-globe:hover
   max-width: 996px;
 }
 .splash {
-  background:url("https://unsplash.com/photos/nd_6z4JFK4g/download?force=true") no-repeat fixed center bottom;
+  background:url("https://images.pexels.com/photos/3139473/pexels-photo-3139473.jpeg") no-repeat fixed center bottom;
 	background-size: cover;
 	color: #fff;
 }
@@ -81,7 +89,7 @@ a.navbar-brand .fa-globe:hover
   max-width: 250px;
   margin: 0 auto 1em;
   width: 100%;
-  opacity: 0.85;
+  opacity: 1;
 }
 
 .splash h1 {
@@ -375,3 +383,4 @@ hr.copyright
 {
   opacity:0.4;
 }
+
