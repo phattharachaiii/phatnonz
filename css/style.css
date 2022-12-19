@@ -193,8 +193,19 @@ section.success {
     position: relative;
     color: #fff;
     background: #37474f;
+    margin: 0;
     padding: 2%;
 }
+.container-about
+{
+  padding: auto;
+}
+.container-detail
+{
+  background-color: rgb(255, 13, 13);
+}
+
+
 section h3{
   font-family: 'Bungee', cursive;
 }
@@ -242,23 +253,26 @@ hr.star-light:after {
     background-color: rgb(13, 79, 136);
 }
 p.content-text { font-size: 25px; }
-.container-about
-{
-  padding: auto;
-  background: #000;
-}
+
+
 /* PORTFOLIO */
 .text-center{
   font-family: 'Bungee', cursive;
 }
-.portfolio-card{
+.text-centerA{
+  font-family: 'Bungee', cursive;
+}
+.text-centerC{
+  font-family: 'Bungee', cursive;
+}
+.carousel-inner{
     box-shadow: 0px 2px 5px #888888;
     background: #eee;
     border-radius: 4px;
-
+    width: 150px;
+    height: 500px;
 }
-
-.portfolio-card:hover{
+.carousel-inner:hover{
 	box-shadow: 0px 10px 10px #888888;
   cursor: pointer
 }
@@ -313,7 +327,6 @@ footer {
   margin-right: auto;
   display: flex;
   justify-content: center;
-  border: 1px solid red;
   background-color: #2C3E50;
   color:  #fff;
   font-size: 1.5em;
@@ -321,14 +334,8 @@ footer {
   align-items: center;
   
 }
-.footer-container
-{
-  background: #e97c16;
-  align-items: center;
-}
 a.tel
 {
-  background-color: #000;
   display: block;
   text-decoration:none;
   color:#fff;
@@ -338,7 +345,7 @@ a.tel:hover
   color: #afceee;
 }
 a.social-button {
-	background: rgb(10, 9, 9);
+	background: rgb(255, 255, 255);
 	font-size: 20px;
 	border-radius: 50%;
 	margin: 5px;
