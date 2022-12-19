@@ -419,8 +419,8 @@ hr.footer-hr
 	height: 36px;
 	width: 36px;
 	z-index:99998;
-	-webkit-transition:all 0.3s ease-out;
-	transition:all 0.3s ease-out
+	-webkit-transition:all 0.1s ease-out;
+	transition:all 0.1s ease-out
 }
 .cursor2.hover,
 .cursor3.hover{
