@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Rammetto+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 html{
   scroll-behavior: smooth;
 }
@@ -10,7 +10,7 @@ html{
 }
 #menu
 {
-  background-color: #b1afaf70;
+  background-color: #eceff1;
 }
 
 .starter-template {
@@ -18,12 +18,13 @@ html{
   text-align: center;
 }
 ul.navbar-nav { 
-  float:right;
+  float: right;
   text-align:center;
 }
 ul.navbar-nav li 
 {
-  padding: 0 10px;
+
+  padding: 0 20px;
 }
 @media only screen and (max-width:767px)
 { ul.navbar-nav { float:none; } }
@@ -32,7 +33,7 @@ ul.navbar-nav li
 }
 .navbar-nav li a
 {
-  color:rgb(59, 49, 49)!important;
+  color:#37474f!important;
   font-size:1.2em;
   font-family: 'Rammetto One', cursive;
   font-weight:600;
@@ -41,7 +42,7 @@ ul.navbar-nav li
 .navbar-nav li a:hover
 {
   color:#fff!important;
-  background-color:black!important;
+  background-color:#455a64!important;
 }
 .navbar-brand 
 {
@@ -53,18 +54,18 @@ a.navbar-brand .name
   display: flex;
   font-family: 'Holtwood One SC', serif;
   font-size: 30px;
-  color: rgb(59, 49, 49);
-  transition:0.5s ease;
+  color: #263238ef;
+  transition:0.3s ease;
 }
 a.navbar-brand .name:hover
 {
-  color: #f8f6f6;
+  color: #607d8b;
 }
 .navbar-inverse .navbar-toggle .icon-bar {
-    background-color: black!important;
+    background-color: #607d8b!important;
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-    background-color: #fff!important;
+    background-color: #cfd8dc!important;
 }
 
 .container {
@@ -93,6 +94,7 @@ a.navbar-brand .name:hover
 }
 
 .splash h1 {
+  font-family: 'Lily Script One', cursive;;
   font-size: 40px;
   margin-bottom: .15em;
   text-align: center;
@@ -183,15 +185,19 @@ h1.intro-text
   padding-top:4em!important;
 }
 section h2 {
+    font-family: 'Bungee', cursive;
     margin: 0;
     font-size: 3em;
 }
 section.success {
+    position: relative;
     color: #fff;
-    background: rgb(13, 79, 136);
-  padding: 2%;
+    background: #37474f;
+    padding: 2%;
 }
-
+section h3{
+  font-family: 'Bungee', cursive;
+}
 section.success a
 {
   color:black;
@@ -200,11 +206,7 @@ section.success a
 section.success a:hover {
     outline: 0;
     color: #fff;
-  border: 2px solid #fff;
-}
-.contact-button
-{
-  padding-bottom:2%;
+    border: 2px solid #fff;
 }
 hr.star-light,hr.star-portfolio {
     margin: 25px auto 30px;
@@ -240,8 +242,15 @@ hr.star-light:after {
     background-color: rgb(13, 79, 136);
 }
 p.content-text { font-size: 25px; }
-
+.container-about
+{
+  padding: auto;
+  background: #000;
+}
 /* PORTFOLIO */
+.text-center{
+  font-family: 'Bungee', cursive;
+}
 .portfolio-card{
     box-shadow: 0px 2px 5px #888888;
     background: #eee;
@@ -284,7 +293,7 @@ p.content-text { font-size: 25px; }
 /* Contact */
 .contact-me-container{
 	padding:3%;
-background: rgb(13, 79, 136);
+  background: #37474f;
 }
 .fa-user,.fa-at,.fa-phone
 {
@@ -299,26 +308,40 @@ Footer
 ======================== */
 
 footer {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  border: 1px solid red;
   background-color: #2C3E50;
   color:  #fff;
   font-size: 1.5em;
-  text-align: center;
   padding:3%;
+  align-items: center;
+  
 }
-a.tel,a.tel:hover
+.footer-container
 {
+  background: #e97c16;
+  align-items: center;
+}
+a.tel
+{
+  background-color: #000;
+  display: block;
   text-decoration:none;
   color:#fff;
 }
+a.tel:hover
+{
+  color: #afceee;
+}
 a.social-button {
-	background: #fff;
+	background: rgb(10, 9, 9);
 	font-size: 20px;
 	border-radius: 50%;
 	margin: 5px;
-}
-.address-container{
-	display: inline-block;
-	margin: 0 auto;
 }
 a.link-facebook,a.link-twitter,a.link-codepen,a.link-linkedin,a.link-instagram
 {
@@ -354,11 +377,6 @@ a.link-codepen:hover{
 	background-color: black;
 	color: #fff;
 }
-
-a.link-linkedin:hover{
-	background-color: #007bb6;
-	color: #fff;
-}
 a.link-instagram:hover{
 	background-color: #e95950;
 	color: #fff;
@@ -368,9 +386,6 @@ a.link-instagram:hover{
     background-color: #fff;
     border-color: transparent!important;
 }
-.fa-heart {
-  color:#f32323;
-}
 h4.author
 {
   letter-spacing:4px;
@@ -379,8 +394,3 @@ hr.footer-hr
 {
   width:50%;
 }
-hr.copyright
-{
-  opacity:0.4;
-}
-
