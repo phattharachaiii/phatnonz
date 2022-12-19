@@ -269,8 +269,10 @@ p.content-text { font-size: 25px; }
     box-shadow: 0px 2px 5px #888888;
     background: #eee;
     border-radius: 4px;
-    width: 150px;
-    height: 500px;
+    max-width: 100%;
+    width:auto;
+    max-height: 100%;
+    height: auto;
 }
 .carousel-inner:hover{
 	box-shadow: 0px 10px 10px #888888;
@@ -292,16 +294,7 @@ p.content-text { font-size: 25px; }
 	width: 100%;
 	border-radius: 4px 4px 0 0;
 }
-.portfolio-img-desc{
-	position: relative;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background: #fff;
-	color: #000;
-	text-align: center;
-	padding: 5px;
-}
+
 
 /* Contact */
 .contact-me-container{
